@@ -192,7 +192,6 @@ func TestQueue_IsEmpty(t *testing.T) {
 		})
 	}
 }
-
 func TestQueue_Peek(t *testing.T) {
 	type fields struct {
 		size     int
