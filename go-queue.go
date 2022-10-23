@@ -25,7 +25,6 @@ func (list *LinkedListQueue) EnQueueLinkedList(data any) *LinkedListQueue {
 		}
 		newList.first = newList
 		newList.last = newList
-		list = newList
 		return list
 	} else if list.first == list.last {
 		listVal := &LinkedListQueue{}
