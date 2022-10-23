@@ -18,7 +18,6 @@ type LinkedListQueue struct {
 func NewLinkedListQueue(data int, next *LinkedListQueue) *LinkedListQueue {
 	return &LinkedListQueue{data: data, next: next, first: nil, last: nil}
 }
-
 func (list *LinkedListQueue) EnQueueLinkedList(data any) *LinkedListQueue {
 
 	if list.first == nil {
