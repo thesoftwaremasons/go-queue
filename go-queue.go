@@ -3,9 +3,8 @@ package go_queue
 import "fmt"
 
 type Queue struct {
-	size    int
-	counter int
-
+	size     int
+	counter  int
 	elements []any
 }
 
