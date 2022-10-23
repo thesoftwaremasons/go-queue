@@ -7,7 +7,6 @@ type Queue struct {
 	counter  int
 	elements []any
 }
-
 type LinkedListQueue struct {
 	data  any
 	next  *LinkedListQueue
@@ -19,7 +18,6 @@ func NewLinkedListQueue(data int, next *LinkedListQueue) *LinkedListQueue {
 	return &LinkedListQueue{data: data, next: next, first: nil, last: nil}
 }
 func (list *LinkedListQueue) EnQueueLinkedList(data any) *LinkedListQueue {
-
 	if list.first == nil {
 		newList := &LinkedListQueue{
 			data: data,
