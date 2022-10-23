@@ -57,10 +57,13 @@ func (q *Queue) EnQueue(element any) {
 	}
 
 }
-func (q *Queue) DeQueue() {
+func (q *Queue) DeQueue() any {
 	if q.counter != -1 {
+		element := q.elements[0]
 		q.elements = q.elements[1:]
+		return element
 	}
+	return nil
 }
 func (q *Queue) GetLength() int {
 	return q.counter
