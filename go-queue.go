@@ -46,7 +46,6 @@ func (list *LinkedListQueue) EnQueueLinkedList(data any) *LinkedListQueue {
 		return list
 	}
 }
-
 func NewQueue(size int) *Queue {
 	elements := make([]any, size)
 	counter := -1
